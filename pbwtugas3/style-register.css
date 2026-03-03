@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+.h-full { height: 100%; }
+.m-0 { margin: 0; }
+.font-segoe { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.register-container {
+    display: flex;
+    height: 100%;
+    flex-direction: row-reverse;
+}
+
+.side-form-reg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.form-wrapper {
+    width: 320px;
+}
+
+.form-wrapper h2 {
+    margin-bottom: 5px;
+}
+
+.greeting {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.btn-reg { 
+    width: 100%; 
+    padding: 12px; 
+    background: #000; 
+    color: #fff; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-reg:hover { 
+    background: #333; 
+}
+
+.side-content-reg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f172a;
+    color: white;
+    padding: 40px;
+}
+
+.brand-info {
+    max-width: 450px;
+    text-align: center;
+}
+
+.brand-info h1 { 
+    font-size: 55px; 
+    margin-bottom: 15px;
+}
+
+.brand-info h1 span { 
+    color: #38bdf8; 
+}
+
+.brand-info p {
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.switch {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.switch a { 
+    color: #38bdf8; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+@media screen and (max-width: 768px) {
+    .register-container {
+        flex-direction: column; 
+    }
+
+    .side-content-reg {
+        padding: 60px 20px;
+        flex: none;
+        order: 1; 
+    }
+
+    .brand-info h1 {
+        font-size: 40px;
+    }
+
+    .side-form-reg {
+        padding: 40px 20px;
+        flex: none;
+        order: 2; 
+    }
+
+    .form-wrapper {
+        width: 100%;
+        max-width: 320px;
+    }
+}
