@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbdulTodo - Halaman Utama</title>
+    <link rel="icon" href="/public/logo-dark.png">
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <style>
+        body { background-color: #f4f7f6; }
+        .bg-dark-custom { background-color: #1e293b !important; }
+        .nav-brand-span { color: #2ecc71; font-weight: 300; }
+        .card { border: none; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .btn-success-custom { background-color: #2ecc71; border: none; }
+        .btn-success-custom:hover { background-color: #27ae60; }
+        .nav-link.active { color: #2ecc71 !important; border-bottom: 2px solid #2ecc71; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                Abdul<span class="nav-brand-span">Todo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Upcoming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Today</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Completed</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <form class="d-flex" role="search">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search">
+                    </form>
+                    <a href="login.html" class="btn btn-danger btn-sm px-3 fw-bold">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-8">
+                <h1 class="fw-bold">Welcome back, Abdul!</h1>
+                <p class="text-muted">Kelola tugas harianmu dengan lebih terorganisir.</p>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <button class="btn btn-success-custom text-white fw-bold px-4" data-bs-toggle="modal" data-bs-target="#createTodoModal">
+                    + Create Todo
+                </button>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Title</h5>
+                        <p class="card-text text-muted small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ullam dolor ipsa dolorum corrupti itaque excepturi nobis nostrum, aperiam accusantium facere, modi maiores esse rem voluptatum laboriosam officia tempore dignissimos?</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-light text-dark border">📅 4 April 2026</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary btn-sm flex-grow-1">Detail</button>
+                            <button class="btn btn-success btn-sm flex-grow-1">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Title</h5>
+                        <p class="card-text text-muted small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt suscipit dolorum aperiam, minus porro molestiae temporibus nihil expedita a nam laboriosam repudiandae velit rem, fuga id, sequi fugiat mollitia quaerat.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-light text-dark border">📅 5 April 2026</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary btn-sm flex-grow-1">Detail</button>
+                            <button class="btn btn-success btn-sm flex-grow-1">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="createTodoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Buat Tugas Baru</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Judul Tugas</label>
+                            <input type="text" class="form-control" placeholder="Apa yang ingin dikerjakan?">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Deskripsi</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-success-custom text-white">Simpan Tugas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

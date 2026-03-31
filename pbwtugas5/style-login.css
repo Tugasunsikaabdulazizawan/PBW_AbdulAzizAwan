@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+.h-full { height: 100%; }
+.m-0 { margin: 0; }
+.font-segoe { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.login-container {
+    display: flex;
+    height: 100%;
+}
+
+.brand-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2ecc71;
+    color: white;
+    padding: 40px;
+}
+
+.brand-wrapper {
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo-text {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.logo-thin {
+    font-weight: 300;
+    color: #1e3a29;
+}
+
+.brand-desc {
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.form-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+}
+
+.header-form {
+    margin-bottom: 30px;
+}
+
+.header-form h2 {
+    margin: 0;
+    color: #333;
+}
+
+.sub-text {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.input-group input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #2ecc71;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+
+.options a {
+    color: #2ecc71;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-green {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-green:hover {
+    background-color: #27ae60;
+}
+
+.register-link {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.register-link a {
+    color: #2ecc71;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        flex-direction: column; 
+    }
+
+    .brand-side {
+        padding: 60px 20px;
+        flex: none; 
+    }
+
+    .brand-wrapper {
+        max-width: 100%;
+    }
+
+    .logo-text {
+        font-size: 2.5rem;
+    }
+
+    .form-side {
+        padding: 40px 20px;
+        flex: none;
+    }
+
+    .login-box {
+        max-width: 100%;
+    }
+}
