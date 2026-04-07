@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbdulDelicioso - Premium Catering Service</title>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">ABDUL<span class="text-warning">DELICIOSO</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Keunggulan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Harga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-3 fw-bold">Selamat Datang di <span class="text-warning">AbdulDelicioso</span></h1>
+            <p class="lead mb-4">Layanan katering premium dengan cita rasa bintang lima, langsung diantar ke lokasi Anda.</p>
+            <a href="#pricing" class="btn btn-warning btn-lg px-5 fw-bold shadow">Lihat Paket Harga</a>
+        </div>
+    </header>
+
+    <section id="features" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-5 fw-bold">Mengapa Harus Kami?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Bahan Pilihan</h5>
+                            <p class="card-text text-muted">Kami menggunakan bahan organik dan daging segar kualitas terbaik setiap harinya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Koki Berpengalaman</h5>
+                            <p class="card-text text-muted">Setiap menu diracik oleh koki profesional untuk menjamin konsistensi rasa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Pengiriman Cepat</h5>
+                            <p class="card-text text-muted">Sistem logistik kami memastikan makanan sampai dalam kondisi hangat dan tepat waktu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Pilihan Paket Langganan</h2>
+            
+            <div class="mb-5">
+                <div class="btn-group" role="group" aria-label="Pricing toggle">
+                    <input type="radio" class="btn-check" name="pricingPlan" id="monthly" checked>
+                    <label class="btn btn-outline-warning px-4" for="monthly">Bulanan</label>
+                    
+                    <input type="radio" class="btn-check" name="pricingPlan" id="yearly">
+                    <label class="btn btn-outline-warning px-4" for="yearly">Tahunan</label>
+                </div>
+                <p class="mt-2 text-success fw-bold small">*Dapatkan diskon 20% untuk langganan tahunan!</p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 border-0">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold">Paket Hemat</h3>
+                            <h4 class="price-display text-warning fw-bold mt-3" data-price="150000">Rp 150.000</h4>
+                            <p class="text-muted period-text">per bulan</p>
+                            <span class="badge bg-success discount-label d-none">Hemat 20%</span>
+                            <ul class="list-unstyled my-4 text-start">
+                                <li>✓ 5x Makan per minggu</li>
+                                <li>✓ Menu Berganti Tiap Hari</li>
+                                <li>✓ Gratis Ongkir Radius 5km</li>
+                            </ul>
+                            <button class="btn btn-outline-dark w-100 py-2">Pilih Paket</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-warning shadow h-100 position-relative">
+                        <div class="card-header bg-warning text-dark fw-bold border-0">TERBAIK</div>
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold">Paket Sultan</h3>
+                            <h4 class="price-display text-warning fw-bold mt-3" data-price="450000">Rp 450.000</h4>
+                            <p class="text-muted period-text">per bulan</p>
+                            <span class="badge bg-success discount-label d-none">Hemat 20%</span>
+                            <ul class="list-unstyled my-4 text-start">
+                                <li>✓ 14x Makan per minggu</li>
+                                <li>✓ Menu Custom Sesuai Diet</li>
+                                <li>✓ Konsultasi Gizi Gratis</li>
+                                <li>✓ Prioritas Pengiriman</li>
+                            </ul>
+                            <button class="btn btn-warning w-100 py-2 fw-bold shadow-sm">Pilih Paket</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 shadow p-5 rounded bg-white">
+                    <h2 class="text-center mb-4 fw-bold">Hubungi Kami</h2>
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="name" placeholder="Contoh: Abdul" required>
+                            <div class="invalid-feedback">Nama wajib diisi.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Alamat Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="nama@email.com" required>
+                            <div class="invalid-feedback">Email tidak valid (harus mengandung '@').</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+                            <div class="invalid-feedback">Pesan tidak boleh kosong.</div>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-2 fw-bold">Kirim Sekarang</button>
+                    </form>
+                    <div id="successMessage" class="alert alert-success mt-3 d-none animate__animated animate__fadeIn">
+                        Terima kasih! Pesan Anda telah terkirim ke tim AbdulDelicioso.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 <strong>AbdulDelicioso</strong>. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
